@@ -1,0 +1,35 @@
+# 論文・作成物・データを誤ってpushしないための除外設定
+# （意図的に入れたいファイルは、行頭に ! を付けて例外指定する）
+
+# 論文・文書
+*.pdf
+*.docx
+*.doc
+
+# スライド
+*.pptx
+*.ppt
+
+# 表・データ
+*.xlsx
+*.xls
+*.csv
+*.tsv
+
+# 画像
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.heic
+
+# 圧縮ファイル
+*.zip
+
+# OSが作る不要ファイル
+.DS_Store
+Thumbs.db
+desktop.ini

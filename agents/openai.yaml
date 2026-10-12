@@ -1,0 +1,4 @@
+interface:
+  display_name: "医学論文スライド"
+  short_description: "英語医学論文を日本語の学会発表用PowerPointへ変換する"
+  default_prompt: "Use $medical-paper-slides to convert the attached English medical paper into a simple Japanese conference PowerPoint deck."
