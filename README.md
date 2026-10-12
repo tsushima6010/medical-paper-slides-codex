@@ -1,7 +1,6 @@
 # medical-paper-slides（Codex版）
 
 医学論文のPDFから、論文内容の**要約スライド**（日本語・pptx）を作るCodex用スキル。
-作成されるのは論文の要約であり、そのまま学会発表に使うことは想定していない。
 
 Claude版はこちら：https://github.com/tsushima6010/medical-paper-slides
 
@@ -14,17 +13,23 @@ Claude版はこちら：https://github.com/tsushima6010/medical-paper-slides
 - PDFの読み取りとpptxの組み立ては、Codex標準の **pdf スキル** と **Presentations スキル** を使うため、それらが使える環境が前提
 
 ## 導入
-Codex にこのページのURLを貼って「このスキルを medical-paper-slides という名前で入れて」と頼めば導入できる
-（Codex標準の skill-installer が `~/.codex/skills/medical-paper-slides` に入れる。導入後は新しいセッションで認識される）。
+次のどちらかの方法で、Codex に頼んで導入する。導入後は新しいセッションで認識される。
 
-手動で入れる場合は、次のどちらかで `~/.codex/skills/medical-paper-slides` に置く。
-- git を使う：
-  ```
-  git clone https://github.com/tsushima6010/medical-paper-slides-codex.git $HOME/.codex/skills/medical-paper-slides
-  ```
-  更新は `git -C $HOME/.codex/skills/medical-paper-slides pull`
-- zipを使う：最新版を下記からダウンロードし、解凍した `medical-paper-slides` フォルダを `~/.codex/skills/` に置く
-  https://github.com/tsushima6010/medical-paper-slides-codex/releases/latest/download/medical-paper-slides-codex.zip
+### zipから入れる
+1. 最新版のzipをダウンロード（解凍しない）：
+   https://github.com/tsushima6010/medical-paper-slides-codex/releases/latest/download/medical-paper-slides-codex.zip
+2. Codex のチャット欄にzipを添付し、「このスキルを medical-paper-slides という名前で入れて」と頼む
+
+### URLから入れる
+Codex にこのページのURLを貼って「このスキルを medical-paper-slides という名前で入れて」と頼む
+（Codex標準の skill-installer が `~/.codex/skills/medical-paper-slides` に入れる）。
+
+更新があったときは、同じ方法でもう一度入れ直す。
+
+手動で入れる場合は次のコマンドを実行する（更新は `git -C $HOME/.codex/skills/medical-paper-slides pull`）。
+```
+git clone https://github.com/tsushima6010/medical-paper-slides-codex.git $HOME/.codex/skills/medical-paper-slides
+```
 
 ## 使い方
 論文PDFを渡して「スライドにして」と依頼する。
