@@ -1,6 +1,6 @@
 # medical-paper-slides（Codex版）
 
-医学論文のPDFから、論文内容の**要約スライド**（日本語・pptx）を作るCodex用スキル。
+医学論文のPDFから、**抄読会や個人の内容把握に使う要約スライド**（日本語・pptx）を作るCodex用スキル。
 
 Claude版はこちら：https://github.com/tsushima6010/medical-paper-slides
 
@@ -8,6 +8,9 @@ Claude版はこちら：https://github.com/tsushima6010/medical-paper-slides
 - 論文の要点を短時間で把握できる**要約スライド**（pptx）を作る
 - 1枚ごとに「論点 → 答え → 根拠」が成立する構成にする
 - 出典（ページ・表・図）をスピーカーノートに残す
+- 考察は重要な1〜2論点を原則1枚にまとめる
+- タイトルの「考察」などの接頭辞や、本文の自明な帰属説明を省く
+- スラッシュは半角 `/` に統一する
 
 ## 前提
 - PDFの読み取りとpptxの組み立ては、Codex標準の **pdf スキル** と **Presentations スキル** を使うため、それらが使える環境が前提
