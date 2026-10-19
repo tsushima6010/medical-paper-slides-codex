@@ -23,6 +23,9 @@ Claude版はこちら：https://github.com/tsushima6010/medical-paper-slides
    https://github.com/tsushima6010/medical-paper-slides-codex/releases/latest/download/medical-paper-slides-codex.zip
 2. Codex のチャット欄にzipを添付し、「このスキルを medical-paper-slides という名前で入れて」と頼む
 
+> **Mac の Safari をお使いの場合**：初期設定ではダウンロードしたzipが自動で解凍され、フォルダになることがある。
+> その場合は、Safari の設定（一般）で「ダウンロード後、"安全な"ファイルを開く」をオフにしてダウンロードし直すか、別のブラウザでダウンロードする。
+
 ### URLから入れる
 Codex にこのページのURLを貼って「このスキルを medical-paper-slides という名前で入れて」と頼む
 （Codex標準の skill-installer が `~/.codex/skills/medical-paper-slides` に入れる）。
